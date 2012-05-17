@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <form action=/login/ method=POST>{% csrf_token %}
+      <input name=username type=text placeholder=username>
+      <input name=password type=password placeholder=password>
+      <input type=submit>
+    </form>
+    {% if success == 'failed' %}
+    <p id=success>Login Failed!</p>
+    {% endif %}
+  </body>
+</html>

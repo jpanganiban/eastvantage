@@ -1,0 +1,13 @@
+from setuptools import setup, find_packages
+
+
+setup(name="eastvantage",
+      description="",
+      version="1.0",
+      packages=find_packages(),
+      install_requires=[
+          'django<1.4',
+        ],
+      include_package_data=True,
+      zip_safe=False,
+    )

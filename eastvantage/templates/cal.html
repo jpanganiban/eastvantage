@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <a href=/logout/>Logout</a>
+    <p id=instructions>
+    You can evaluate any valid mathemtaical expression here.
+    </p>
+    <form action=/ method=POST>{% csrf_token %}
+      <input name=expression type=text placeholder="Enter a mathematical expression">
+      <input type=submit>
+    </form>
+    <p id=result>{{ result }}</p>
+  </body>
+</html>
